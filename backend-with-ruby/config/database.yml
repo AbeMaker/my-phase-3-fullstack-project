@@ -1,0 +1,7 @@
+development:
+  adapter: sqlite3
+  database: db/kenya-dev.sqlite3
+
+  production:
+    adapter: sqlite3
+    database: db/kenya-prod.sqlite3
