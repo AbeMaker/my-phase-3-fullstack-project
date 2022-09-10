@@ -8,3 +8,7 @@ end
  task :seed do
      require_relative './db/seed'
  end
+
+ task :seed_constituency do
+    require_relative './db/seed_constituency'
+end

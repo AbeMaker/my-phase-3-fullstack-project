@@ -1,5 +1,4 @@
 #This is where routes are defined
-
 class CountyController < Sinatra::Base
     set :default_content_type, 'application/json'
     get '/counties' do

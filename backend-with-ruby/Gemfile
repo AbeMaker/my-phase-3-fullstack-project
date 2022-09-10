@@ -8,6 +8,11 @@ gem 'rake','~>13.0', '>=13.0.6'
 gem 'sinatra-activerecord','~>2.0', '>=2.0.25'
 gem 'require_all'
 gem 'puma'
+#gem 'rack-cors', '~> 1.1'
+gem 'rack-contrib', '~> 2.3'
+gem 'thin', '~> 1.8'
+gem 'rack-cors', '~> 1.1'
+
 
 
 group :development do 

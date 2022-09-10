@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_08_132624) do
+ActiveRecord::Schema[7.0].define(version: 2022_09_08_193726) do
+  create_table "constituencies", force: :cascade do |t|
+    t.string "name"
+    t.string "ward"
+    t.integer "number_of_constituencies"
+  end
+
   create_table "counties", force: :cascade do |t|
     t.string "name"
     t.string "country"

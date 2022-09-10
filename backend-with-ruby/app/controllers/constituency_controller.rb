@@ -1,5 +1,7 @@
 class ConstituencyController < Sinatra::Base
+    set :default_content_type, 'application/json'
     get '/constituencies' do
-        "Karibu Kanairo"
+        
+            Constituency.all.to_json
     end
 end
