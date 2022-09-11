@@ -1,0 +1,16 @@
+current directory: /home/anyang/Development/my-phase-3-fullstack-project/backend-with-ruby/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/usr/share/rvm/rubies/ruby-2.7.4/bin/ruby -I /usr/share/rvm/rubies/ruby-2.7.4/lib/ruby/site_ruby/2.7.0 -r ./siteconf20220909-10763-lj7mjn.rb extconf.rb
+creating Makefile
+
+current directory: /home/anyang/Development/my-phase-3-fullstack-project/backend-with-ruby/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= clean
+
+current directory: /home/anyang/Development/my-phase-3-fullstack-project/backend-with-ruby/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\=
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/anyang/Development/my-phase-3-fullstack-project/backend-with-ruby/vendor/bundle/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= install
+/usr/bin/install -m 0755 fastfilereaderext.so ./.gem.20220909-10763-1v5yxza
