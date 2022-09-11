@@ -3,6 +3,7 @@ import "./App.css";
 import PostCounty from "./components/PostCounty";
 import DeleteCounty from "./components/DeleteCounty";
 import Navbar from "./components/Navbar";
+//import UpdateCounty from "./components/UpdateCounty";
 
 
 function App() {
@@ -75,7 +76,9 @@ function App() {
      <Navbar/>
       <br />
       <PostCounty onAdd={onAdd} />
+      
       <div>
+    
         {counties.map((county) => (
           <DeleteCounty
             id={county.id}
@@ -85,8 +88,10 @@ function App() {
             population={county.population}
             county_number={county.county_number}
             onDelete={onDelete}
+          
             
           />
+          
         ))}
         <h2>There are currently {counties.length} counties in the database.</h2>
 
