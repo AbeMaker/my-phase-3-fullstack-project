@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import PostCounty from "./components/PostCounty";
 import DeleteCounty from "./components/DeleteCounty";
+import Navbar from "./components/Navbar";
+
 
 function App() {
   const [counties, setCounties] = useState([]);
@@ -46,6 +48,7 @@ function App() {
       });
   };
 
+
   const onDelete = async (id) => {
     await fetch(`/counties/${id}`, {
       method: "DELETE",
@@ -66,9 +69,10 @@ function App() {
       });
   };
   console.log(counties);
+
   return (
     <div className="App">
-     
+     <Navbar/>
       <br />
       <PostCounty onAdd={onAdd} />
       <div>
@@ -81,8 +85,11 @@ function App() {
             population={county.population}
             county_number={county.county_number}
             onDelete={onDelete}
+            
           />
         ))}
+        <h2>There are currently {counties.length} counties in the database.</h2>
+
       </div>
     </div>
   );
