@@ -1,4 +1,4 @@
 class County < ActiveRecord::Base
-    has_many :countituencies
+    has_many :constituencies
     
 end
