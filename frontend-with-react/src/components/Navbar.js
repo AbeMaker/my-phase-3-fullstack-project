@@ -6,6 +6,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
+
+
 function OffcanvasExample() {
   return (
     <>
@@ -26,7 +28,7 @@ function OffcanvasExample() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#home">Home</Nav.Link>
+                  <Nav.Link href="#">Home</Nav.Link>
                   <Nav.Link href="#counties">Counties</Nav.Link>
                   <NavDropdown
                     title="Additional Navs"
